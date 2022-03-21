@@ -1,7 +1,7 @@
 export class Tarefa {
   constructor(
     public id?: number,
-    public descricao?: string,
+    public nome?: string,
     public concluida?: boolean
   ) {}
 }
