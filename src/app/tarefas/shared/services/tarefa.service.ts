@@ -17,6 +17,7 @@ export class TarefaService {
     let tarefas = this.listarTodos();
     tarefa.id = new Date().getTime();
     tarefa.createdAt = new Date();
+    tarefa.updatedAt = tarefa.createdAt;
     tarefas.push(tarefa);
     localStorage.setItem('tarefas', JSON.stringify(tarefas));
   }
@@ -30,6 +31,7 @@ export class TarefaService {
     let tarefas: Tarefa[] = this.listarTodos();
     tarefas.forEach((tar, i, tars) => {
       if (tarefa.id === tar.id) {
+        tarefa.updatedAt = new Date();
         tars[i] = tarefa;
       }
     });

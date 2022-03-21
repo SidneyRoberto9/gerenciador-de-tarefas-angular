@@ -5,6 +5,7 @@
     <tr>
       <th>Tarefa</th>
       <th class="text-center">Criação</th>
+      <th class="text-center">Modificação</th>
       <th>Concluída</th>
       <th class="text-center">
         <a class="btn btn-xs btn-success" [routerLink]="['/tarefas/cadastrar']">
@@ -20,7 +21,10 @@
         {{ tarefa.nome }}
       </td>
       <td class="text-center data">
-        {{ tarefa.createdAt | date: "dd/MM/yyyy hh:mm a" }}
+        {{ tarefa.createdAt | date: "dd/MM/yyyy hh:mm:ss a" }}
+      </td>
+      <td class="text-center data">
+        {{ tarefa.updatedAt | date: "dd/MM/yyyy hh:mm:ss a" }}
       </td>
       <td class="text-center check">
         <input
