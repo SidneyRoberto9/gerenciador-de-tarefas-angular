@@ -1,8 +1,7 @@
 import { Routes } from '@angular/router';
+
 import {
-  CadastrarTarefaComponent,
-  ListarTarefasComponent,
-  EditarTarefaComponent,
+    CadastrarTarefaComponent, EditarTarefaComponent, ListarTarefasComponent
 } from './components';
 
 export const TarefasRoutes: Routes = [
