@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TarefaService } from './shared';
+import { ListarTarefasComponent } from './components';
 
 @NgModule({
-  declarations: [],
+  declarations: [ListarTarefasComponent],
   imports: [CommonModule],
   providers: [TarefaService],
 })
