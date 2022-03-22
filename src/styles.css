@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.white-theme {
+  background-color: var(--bg);
+  --bg: #ffffff;
+  --text: #000000;
+  --success: #dff0d8;
+
+  --new: #5cb85c;
+  --new-bd: #4cae4c;
+
+  --edit: #5bc0de;
+  --edit-bd: #46b8da;
+
+  --delete: #d9534f;
+  --delete-bd: #d43f3a;
+}

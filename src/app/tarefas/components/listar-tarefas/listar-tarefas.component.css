@@ -28,3 +28,26 @@
 .action {
   width: 100px;
 }
+
+.table {
+  background-color: #fff;
+}
+
+.success {
+  background-color: var(--success);
+}
+
+.btn-success {
+  background-color: var(--new);
+  border-color: var(--new-bd);
+}
+
+.btn-info {
+  background-color: var(--edit);
+  border-color: var(--edit-bd);
+}
+
+.btn-danger {
+  background-color: var(--delete);
+  border-color: var(--delete-bd);
+}
